@@ -4,8 +4,8 @@
 注意：本库会自动归一化图片
 """
 import numpy as np
-import matplotlib.pyplot as plt
-import cv2
+import matplotlib.pyplot as plt  # 仅用于输出直方图 histogram()
+import cv2 # 仅在hsi2rgb(),rgb2hsi()中使用了cv2.split
 
 
 def im_filter(pic: np.ndarray, mask: np.ndarray, mode: str = 'sum', alpha: bool = True):
